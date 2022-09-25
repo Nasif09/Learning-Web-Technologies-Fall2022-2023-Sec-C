@@ -9,7 +9,7 @@
         </ADMISSION_DATE>
     </ADMISSION>
     <ADMISSION ID="2">
-        <SL_NO>29</SL-NO>
+        <SL_NO>29</SL_NO>
         <NAME>Bob Marshal</NAME>
         <ADMISSION_DATE>
             <DAY>13</DAY>

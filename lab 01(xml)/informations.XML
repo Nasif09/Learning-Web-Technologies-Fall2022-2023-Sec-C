@@ -6,8 +6,8 @@
             <HOUSE>35</HOUSE>
             <ROAD>3</ROAD>
             <POST>Banani</POST>
-            <DISTRICT>Dhaka<DISTRICT>
-        </ADDDRESSES>
+            <DISTRICT>Dhaka</DISTRICT>
+        </ADDRESSES>
         <DEPARTMENT>Sales</DEPARTMENT>
         <SALARY>$20000</SALARY>
     </INFORMATION>
@@ -20,8 +20,8 @@
             <HOUSE>20</HOUSE>
             <ROAD>18</ROAD>
             <POST>Mirpur</POST>
-            <DISTRICT>Dhaka<DISTRICT>
-        </ADDDRESSES>
+            <DISTRICT>Dhaka</DISTRICT>
+        </ADDRESSES>
         <DEPARTMENT>Accounts</DEPARTMENT>
         <SALARY>$12000</SALARY>
     </INFORMATION>
@@ -33,7 +33,7 @@
             <HOUSE>38</HOUSE>
             <ROAD>3</ROAD>
             <POST>Matijhil</POST>
-        </ADDDRESSES>
+        </ADDRESSES>
         <DEPARTMENT>Human Resource</DEPARTMENT>
         <SALARY>$30000</SALARY>
     </INFORMATION>
