@@ -1,0 +1,17 @@
+<ADMISSIONS>
+    <ADMISSION ID="1">
+        <ID>23</ID>
+        <NAME>Jone Carter</NAME>
+        <ADMISSION_DATE>25/12/2015</ADMISSION_DATE>
+    </ADMISSION>
+    <ADMISSION ID="2">
+        <ID>29</ID>
+        <NAME>Bob Marshal</NAME>
+        <ADMISSION_DATE>13/01/1999</ADMISSION_DATE>
+    </ADMISSION>
+    <ADMISSION ID="3">
+        <ID>35</ID>
+        <NAME>Clark Kent</NAME>
+        <ADMISSION_DATE>17/06/2005</ADMISSION_DATE>
+    </ADMISSION>
+</ADMISSIONS>

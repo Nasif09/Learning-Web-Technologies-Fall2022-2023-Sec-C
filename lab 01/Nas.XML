@@ -1,0 +1,31 @@
+<INFORMATIONS>
+    <INFORMATION ID="1">
+        <ID>1</ID>
+        <NAME>JoHN Doe</NAME>
+        <ADDRESSES>
+            <HOUSE>35</HOUSE>
+            <ROAD>3</ROAD>
+            <POST>Banani</POST>
+            <DISTRICT>Dhaka<DISTRICT>
+        </ADDDRESSES>
+
+    </INFORMATION>
+    <INFORMATION ID="2">
+        <ID>2</ID>
+        <NAME>JoHN Doe</NAME>
+        <ADDRESSES>
+            <FLAT>a/1</FLAT>
+            <HOUSE>20</HOUSE>
+            <ROAD>18</ROAD>
+            <POST>Mirpur</POST>
+            <DISTRICT>Dhaka<DISTRICT>
+    </INFORMATION>
+    <INFORMATION ID="3">
+        <ID>3</ID>
+        <NAME>JoHN Doe</NAME>
+        <ADDRESSES>
+            <HOUSE>38</HOUSE>
+            <ROAD>3</ROAD>
+            <POST>Matijhil</POST>
+    </INFORMATION>
+</INFORMATIONS>
