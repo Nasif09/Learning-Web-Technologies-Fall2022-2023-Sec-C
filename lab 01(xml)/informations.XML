@@ -1,31 +1,41 @@
 <INFORMATIONS>
     <INFORMATION ID="1">
         <ID>1</ID>
-        <NAME>JoHN Doe</NAME>
+        <NAME>John Doe</NAME>
         <ADDRESSES>
             <HOUSE>35</HOUSE>
             <ROAD>3</ROAD>
             <POST>Banani</POST>
             <DISTRICT>Dhaka<DISTRICT>
         </ADDDRESSES>
-
+        <DEPARTMENT>Sales</DEPARTMENT>
+        <SALARY>$20000</SALARY>
     </INFORMATION>
+
     <INFORMATION ID="2">
         <ID>2</ID>
-        <NAME>JoHN Doe</NAME>
+        <NAME>Mark Jokerberg</NAME>
         <ADDRESSES>
-            <FLAT>a/1</FLAT>
+            <FLAT>A/1</FLAT>
             <HOUSE>20</HOUSE>
             <ROAD>18</ROAD>
             <POST>Mirpur</POST>
             <DISTRICT>Dhaka<DISTRICT>
+        </ADDDRESSES>
+        <DEPARTMENT>Accounts</DEPARTMENT>
+        <SALARY>$12000</SALARY>
     </INFORMATION>
+
     <INFORMATION ID="3">
         <ID>3</ID>
-        <NAME>JoHN Doe</NAME>
+        <NAME>Ala Voski</NAME>
         <ADDRESSES>
             <HOUSE>38</HOUSE>
             <ROAD>3</ROAD>
             <POST>Matijhil</POST>
+        </ADDDRESSES>
+        <DEPARTMENT>Human Resource</DEPARTMENT>
+        <SALARY>$30000</SALARY>
     </INFORMATION>
+
 </INFORMATIONS>
