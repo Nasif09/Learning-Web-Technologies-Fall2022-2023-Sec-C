@@ -9,7 +9,7 @@
                     <table height="100%" width="100%">
                         <tr height="70px">
                             <td>
-                                <a href="../managerdashboard.php"><h2><i>Smart Hostel</i></h2></a>
+                                <a href="managerdashboard.php"><h2><i>Smart Hostel</i></h2></a>
                             </td>
                             <td align="right"> <h4>Welcome,</h4></td>
                             <td align="right">
@@ -24,7 +24,7 @@
                     <table width="100%">
                         <tr>
                             <td width="30%">
-                                <form method="post" action="managersection.php">
+                                <form method="post" action="../controllers/managersection.php">
                                     <fieldset>
                                         <table>
                                             <tr align="left">
@@ -87,52 +87,13 @@
                                 </form>
                             </td>
                             <td align="center">
-                                <form method="post" action="edituservalidator.php">
-                                    <fieldset>
-                                        <legend>Add User</legend>
-                                        <table>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>:<input type="text" name="name" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fathername</td>
-                                                <td>:<input type="text" name="fathername" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Occupation</td>
-                                                <td>:<input type="text" name="occupation" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Date of Birth</td>
-                                                <td>:<input type="date" name="dob" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Parmanentaddress</td>
-                                                <td>:<input type="text" name="parmanentaddress" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Branch</td>
-                                                <td>:
-                                                    <select name="branch">
-                                                        <option value="">Branch 01</option>
-                                                        <option value="">Branch 02</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Room</td>
-                                                <td>:<input type="text" name="room" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Furniture</td>
-                                                <td>:<input type="text" name="furniture" /></td>
-                                            </tr>    
-                                            <tr>
-                                                <td align="center" colspan="2"><input type="submit" name="insert" value="Save Change" ></td>
-                                            </tr>
-                                        </table>
-                                    </fieldset>
+                                <form method="post" action="../controllers/searchuserValidator.php">
+                                <table>
+                                    <tr>
+                                        <td><input type="text" name="searchbyusername"></td>
+                                        <td><input type="submit" value="Search"></td>
+                                    </tr>
+                                </table>
                                 </form>
                             </td>
                         </tr>

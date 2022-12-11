@@ -9,7 +9,7 @@
                     <table height="100%" width="100%">
                         <tr height="70px">
                             <td>
-                                <a href="../managerdashboard.php"><h2><i>Smart Hostel</i></h2></a>
+                                <a href="managerdashboard.php"><h2><i>Smart Hostel</i></h2></a>
                             </td>
                             <td align="right"> <h4>Welcome,</h4></td>
                             <td align="right">
@@ -24,7 +24,7 @@
                     <table width="100%">
                         <tr>
                             <td width="30%">
-                                <form method="post" action="managersection.php">
+                                <form method="post" action="../../controllers/manager/managersection.php">
                                     <fieldset>
                                         <table>
                                             <tr align="left">
@@ -32,7 +32,19 @@
                                                 <td>
                                                     <select name="usermanagement">
                                                         <option value="adduser">Add User</option>
-                                                        <option value="updatedetails">Update Details</option>
+                                                        <option value="searchuser">Search User</option>
+                                                        <option value="users">Users</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr align="left">
+                                                <td><input type="radio" name="mngOpt" value="employeemanagement" />Employee Management</td>
+                                                <td>
+                                                    <select name="employeemanagement">
+                                                        <option value="addemployee">Add Employee</option>
+                                                        <option value="searchemployee">Search Employee</option>
+                                                        <option value="employees">Employees</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -71,7 +83,9 @@
                                                 <td><input type="radio" name="mngOpt" value="" />Others</td>
                                                 <td>
                                                     <select name="others">
+                                                        <option value="contactbox">Contact Box</option>
                                                         <option value="complainbox">Complain Box</option>
+                                                        <option value="leaveapplication">Leave Application</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -87,49 +101,36 @@
                                 </form>
                             </td>
                             <td align="center">
-                                <form method="post" action="adduservalidator.php">
+                                <form method="post" action="../../controllers/manager/addroomValidator.php">
                                     <fieldset>
-                                        <legend>Add User</legend>
+                                        <legend>Add Room</legend>
                                         <table>
                                             <tr>
-                                                <td>Name</td>
-                                                <td>:<input type="text" name="name" /></td>
+                                                <td>Room No</td>
+                                                <td>:<input type="text" name="roomno" /></td>
                                             </tr>
                                             <tr>
-                                                <td>Fathername</td>
-                                                <td>:<input type="text" name="fathername" /></td>
+                                                <td>Room Type</td>
+                                                <td>:
+                                                    <select name="roomtype">
+                                                        <option value="">AC</option>
+                                                        <option value="">DELUX</option>
+                                                        <option value="">Non AC</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Occupation</td>
-                                                <td>:<input type="text" name="occupation" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Date of Birth</td>
-                                                <td>:<input type="date" name="dob" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Parmanentaddress</td>
-                                                <td>:<input type="text" name="parmanentaddress" /></td>
-                                            </tr>
                                             <tr>
                                                 <td>Branch</td>
                                                 <td>:
-                                                    <select name="branch">
+                                                    <select name="branchname">
                                                         <option value="">Branch 01</option>
                                                         <option value="">Branch 02</option>
                                                     </select>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Room</td>
-                                                <td>:<input type="text" name="room" /></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Furniture</td>
-                                                <td>:<input type="text" name="furniture" /></td>
-                                            </tr>    
-                                            <tr>
-                                                <td align="center" colspan="2"><input type="submit" name="insert" value="ADD" ></td>
+                                                <td align="center" colspan="2"><input type="submit" name="insert" value="Insert" ></td>
                                             </tr>
                                         </table>
                                     </fieldset>

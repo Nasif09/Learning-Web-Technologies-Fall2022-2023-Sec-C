@@ -10,7 +10,7 @@ session_start();
         echo $opt.$chc;
 
         if($chc=="adduser"){
-            header('location:adduser.php');
+            header('location:../views/adduser.php');
         }
         else if($chc=="edituser"){
             header('location:edituser.php');
@@ -20,6 +20,14 @@ session_start();
         }
         else if($chc=="searchuser"){
             header('location:searchuser.php');
+        }
+
+        else if($chc=="addroom"){
+            header('location:../views/addroom.php');
+        }
+        
+        else if($chc=="addfacility"){
+            header('location:../views/addfacility.php');
         }
 
     }

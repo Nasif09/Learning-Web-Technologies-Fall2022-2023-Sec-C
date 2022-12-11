@@ -1,6 +1,13 @@
+<script>
+    function emptusername(){
+
+    let username = document.getElementById('username').value;
+}
+</script>
+
 <html>
     <head>
-        <title>Manager Dashboard</title>
+        <title>Add User</title>
     </head>
     <body>
         <table border="4" width="100%" height="100%">
@@ -11,9 +18,9 @@
                             <td>
                                 <a href="managerdashboard.php"><h2><i>Smart Hostel</i></h2></a>
                             </td>
-                            <td align="right"> <h4>Welcome, Manager</h4></td>
+                            <td align="right"> <h4>Welcome,</h4></td>
                             <td align="right">
-                                <a href="logout.php"><img src="image\logout-icon.jpg" width="35" height="35" align="center"></a>
+                                <a href="../logout.php"><img src="../image/logout-icon.jpg" width="35" height="35" align="center"></a>
                             </td>
                         </tr>
                     </table>
@@ -24,7 +31,7 @@
                     <table width="100%">
                         <tr>
                             <td width="30%">
-                                <form method="post" action="managerdashboards/managersection.php">
+                                <form method="post" action="../controllers/managersection.php">
                                     <fieldset>
                                         <table>
                                             <tr align="left">
@@ -32,9 +39,7 @@
                                                 <td>
                                                     <select name="usermanagement">
                                                         <option value="adduser">Add User</option>
-                                                        <option value="edituser">Edit Exixting User</option>
-                                                        <option value="deleteuser">Delete Exixting User</option>
-                                                        <option value="searchuser">Search User</option>
+                                                        <option value="updatedetails">Update Details</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -89,40 +94,61 @@
                                 </form>
                             </td>
                             <td align="center">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <fieldset>
-                                                <legend>Users</legend>
-                                                <h2>Number of users:
-                                                </h2>
-                                            </fieldset>
-                                        </td>
-                                        <!-- <td>
-                                            <fieldset>
-                                                <legend>Facilities</legend>
-                                                <h2>Number of facilities:
-                                                </h2>
-                                            </fieldset>
-                                        </td> -->
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <fieldset>
-                                                <legend>Roomes</legend>
-                                                <h2>Number of roomes: 
-                                                </h2>
-                                            </fieldset>
-                                        </td>
-                                        <!-- <td>
-                                            <fieldset>
-                                                <legend>Rooms</legend>
-                                                <h2>Number of Rooms:
-                                                </h2>
-                                            </fieldset>
-                                        </td> -->
-                                    </tr>
-                                </table>
+                                <form method="post" action="../controllers/adduserValidator.php">
+                                    <fieldset>
+                                        <legend>Add User</legend>
+                                        <table>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>:<input type="text" name="username" id="name" onkeyup="emptusername()"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Password</td>
+                                                <td>:<input type="text" name="password" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fathername</td>
+                                                <td>:<input type="text" name="fathername" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mothername</td>
+                                                <td>:<input type="text" name="mothername" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Occupation</td>
+                                                <td>:<input type="text" name="occupation" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of Birth</td>
+                                                <td>:<input type="date" name="dob" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parmanentaddress</td>
+                                                <td>:<input type="text" name="parmanentaddress" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Branch</td>
+                                                <td>:
+                                                    <select name="branch">
+                                                        <option value="1">Branch 01</option>
+                                                        <option value="2">Branch 02</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Room</td>
+                                                <td>:<input type="number" name="room" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Furniture</td>
+                                                <td>:<input type="number" name="furniture" /></td>
+                                            </tr>    
+                                            <tr>
+                                                <td align="center" colspan="2"><input type="submit" name="insert" value="ADD" onclick="emptusername()"></td>
+                                            </tr>
+                                        </table>
+                                    </fieldset>
+                                </form>
                             </td>
                         </tr>
                     </table>
